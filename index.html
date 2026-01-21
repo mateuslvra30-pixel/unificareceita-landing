@@ -12,25 +12,29 @@
 
     body {
       margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #181818;
+      background: #1b1b1b;
       color: #f2f2f2;
     }
 
     .container {
+      width: 100%;
       max-width: 900px;
-      margin: 120px auto;
-      padding: 60px 40px;
-      background: #1f1f1f;
-      border-radius: 16px;
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+      padding: 64px 56px;
+      background: #222;
+      border-radius: 18px;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.55);
       animation: fadeUp 0.9s ease forwards;
     }
 
     @keyframes fadeUp {
       from {
         opacity: 0;
-        transform: translateY(25px);
+        transform: translateY(24px);
       }
       to {
         opacity: 1;
@@ -38,48 +42,52 @@
       }
     }
 
+    .logo-wrapper {
+      margin-bottom: 40px;
+    }
+
     .logo {
-      width: 120px;
-      margin-bottom: 30px;
+      width: 140px;
+      display: block;
     }
 
     h1 {
       font-size: 3rem;
-      margin: 0 0 20px;
+      margin: 0 0 24px;
       letter-spacing: -1px;
+    }
+
+    .divider {
+      width: 64px;
+      height: 4px;
+      background: #ffffff;
+      opacity: 0.12;
+      border-radius: 2px;
+      margin-bottom: 32px;
     }
 
     p {
       font-size: 1.25rem;
-      line-height: 1.6;
-      opacity: 0.85;
-      margin-bottom: 40px;
-    }
-
-    .divider {
-      width: 60px;
-      height: 4px;
-      background: #ffffff;
-      opacity: 0.15;
-      border-radius: 2px;
-      margin-bottom: 40px;
+      line-height: 1.7;
+      color: #d6d6d6;
+      margin-bottom: 48px;
     }
 
     .contact {
       font-size: 1.1rem;
-      opacity: 0.9;
+      color: #cfcfcf;
     }
 
     .contact strong {
       display: block;
       margin-bottom: 8px;
       font-weight: 600;
+      color: #ffffff;
     }
 
     @media (max-width: 600px) {
       .container {
-        margin: 60px 20px;
-        padding: 40px 25px;
+        padding: 40px 28px;
       }
 
       h1 {
@@ -89,6 +97,10 @@
       p {
         font-size: 1.1rem;
       }
+
+      .logo {
+        width: 110px;
+      }
     }
   </style>
 </head>
@@ -97,9 +109,12 @@
   <div class="container">
 
     <!-- LOGO -->
-    <img src="logo.png" alt="RIGHT HAND logo" class="logo" />
+    <!-- Se sua logo NÃO for logo.png, troque o nome aqui -->
+    <div class="logo-wrapper">
+      <img src="logo.png" alt="RIGHT HAND logo" class="logo" />
+    </div>
 
-    <!-- NOME -->
+    <!-- TÍTULO -->
     <h1>RIGHT HAND</h1>
 
     <div class="divider"></div>
