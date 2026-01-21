@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>RIGHT HAND — Softwares que trabalham por você</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* animações sutis */
+    .fade-up {
+      animation: fadeUp 0.8s ease-out both;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-<body class="bg-black text-white font-sans">
+<body class="bg-gradient-to-b from-[#1f1f1f] to-[#141414] text-white font-sans">
 
   <!-- Header -->
-  <header class="max-w-6xl mx-auto px-6 py-10 flex items-center gap-6">
+  <header class="max-w-6xl mx-auto px-6 py-12 flex items-center gap-6 fade-up">
     <!-- Logo SVG embutida -->
     <div class="w-20 h-20 flex-shrink-0">
       <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,32 +30,36 @@
           <path d="M70 150h20"/>
           <path d="M210 150h20"/>
           <circle cx="150" cy="150" r="55"/>
-          <path d="M150 50c55 0 100 45 100 100s-45 100-100 100-100-45-100-100S95 50 150 50z"/>
         </g>
       </svg>
     </div>
 
     <div>
       <h1 class="text-4xl font-bold tracking-wide">RIGHT HAND</h1>
-      <p class="mt-2 text-gray-400 text-lg">Softwares que facilitam. Automatizam. Alavancam.</p>
+      <p class="mt-2 text-gray-300 text-lg">Softwares que facilitam. Automatizam. Alavancam.</p>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="max-w-6xl mx-auto px-6 py-24">
+  <section class="max-w-6xl mx-auto px-6 py-28 fade-up">
     <h2 class="text-5xl md:text-6xl font-extrabold leading-tight max-w-3xl">
       A tecnologia certa<br />
       trabalhando ao lado do seu negócio.
     </h2>
-    <p class="mt-8 text-xl text-gray-300 max-w-2xl">
+    <p class="mt-10 text-xl text-gray-300 max-w-2xl leading-relaxed">
       A RIGHT HAND desenvolve softwares, sites e sistemas pensados para simplificar processos,
       reduzir esforço manual e transformar tarefas repetitivas em soluções automáticas e eficientes.
     </p>
   </section>
 
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
+  </div>
+
   <!-- Sobre -->
-  <section class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-800">
-    <h3 class="text-3xl font-semibold mb-6">Quem somos</h3>
+  <section class="max-w-6xl mx-auto px-6 py-24 fade-up">
+    <h3 class="text-3xl font-semibold mb-8">Quem somos</h3>
     <p class="text-gray-300 text-lg max-w-3xl leading-relaxed">
       Somos uma empresa focada em criar soluções digitais acessíveis e sob medida.
       Atuamos como a extensão técnica dos nossos clientes, entregando ferramentas que
@@ -53,13 +67,18 @@
     </p>
   </section>
 
-  <!-- Serviços -->
-  <section class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-800">
-    <h3 class="text-3xl font-semibold mb-10">O que fazemos</h3>
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
+  </div>
 
-    <div class="grid md:grid-cols-3 gap-10">
+  <!-- Serviços -->
+  <section class="max-w-6xl mx-auto px-6 py-24 fade-up">
+    <h3 class="text-3xl font-semibold mb-14">O que fazemos</h3>
+
+    <div class="grid md:grid-cols-3 gap-14">
       <div>
-        <h4 class="text-xl font-semibold mb-3">Desenvolvimento de softwares</h4>
+        <h4 class="text-xl font-semibold mb-4">Desenvolvimento de softwares</h4>
         <p class="text-gray-400 leading-relaxed">
           Sistemas personalizados para automatizar processos internos, controlar informações
           e otimizar rotinas operacionais.
@@ -67,7 +86,7 @@
       </div>
 
       <div>
-        <h4 class="text-xl font-semibold mb-3">Sites e aplicações web</h4>
+        <h4 class="text-xl font-semibold mb-4">Sites e aplicações web</h4>
         <p class="text-gray-400 leading-relaxed">
           Sites institucionais e aplicações modernas, pensadas para comunicar com clareza
           e funcionar bem em qualquer dispositivo.
@@ -75,7 +94,7 @@
       </div>
 
       <div>
-        <h4 class="text-xl font-semibold mb-3">Soluções sob medida</h4>
+        <h4 class="text-xl font-semibold mb-4">Soluções sob medida</h4>
         <p class="text-gray-400 leading-relaxed">
           Projetos desenvolvidos de acordo com a necessidade real do cliente, sempre
           buscando simplicidade, eficiência e custo acessível.
@@ -84,22 +103,27 @@
     </div>
   </section>
 
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent"></div>
+  </div>
+
   <!-- CTA -->
-  <section class="max-w-6xl mx-auto px-6 py-24 border-t border-gray-800 text-center">
-    <h3 class="text-4xl font-bold mb-6">Vamos conversar</h3>
-    <p class="text-gray-300 text-lg mb-10 max-w-2xl mx-auto">
+  <section class="max-w-6xl mx-auto px-6 py-28 text-center fade-up">
+    <h3 class="text-4xl font-bold mb-8">Vamos conversar</h3>
+    <p class="text-gray-300 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
       Se você tem uma ideia, um problema ou um processo que pode ser melhorado,
       a RIGHT HAND pode ser a parceira certa.
     </p>
 
     <a href="https://wa.me/557193256978" target="_blank"
-       class="inline-block px-10 py-4 text-lg font-semibold rounded-full bg-white text-black hover:bg-gray-200 transition">
+       class="inline-block px-12 py-4 text-lg font-semibold rounded-full bg-white text-black hover:bg-gray-200 transition">
       Falar no WhatsApp
     </a>
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-gray-800 py-8 text-center text-gray-500 text-sm">
+  <footer class="border-t border-gray-700 py-10 text-center text-gray-400 text-sm">
     RIGHT HAND © 2026 — Softwares facilitadores
   </footer>
 
